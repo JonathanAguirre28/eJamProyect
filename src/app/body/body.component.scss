@@ -1,0 +1,123 @@
+.main{
+    &__div {
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+        padding: 10px;
+        &-img1 {
+            width: 192px;
+            height: 36px;
+            padding: 5px;
+        }
+        &-img2 {
+            width: 88px;
+            height: 32px;
+            padding: 0 30px;
+        }
+        &-img3 {
+            width: 82px;
+            height: 32px;
+        }
+    }
+    &__div2 {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-parrafo1 {
+            font-size: 35px;
+            font-weight: 400;
+        }
+        &--parrafo2 {
+            font-size: 20px;
+        }
+    }
+}
+
+.main1 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-icono {
+         width: 40px;
+         height: 40px; 
+         padding: 0 10px;     
+        }
+        &-text1 {
+            width: 180px;
+            height: 14px;
+            font-weight: 400;
+            line-height: 22px;
+
+        }
+        &-text2 {
+            width: 163px;
+            height: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        &-text3 {
+            font-weight: 700;
+            width: 201px;
+            height: 14px;
+            line-height: 22px;
+        } 
+        &-text4 {
+            width: 195px;
+            height: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+
+.main2 {
+    display: flex;
+    padding-top: 10px;
+    &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+            width: 575px;
+            height: 591;
+            padding-top: 40px;
+            padding-left: 40px;
+            border-radius: 10px;
+        }
+        &-img2 {
+            width: 48px;
+            height: 48px;
+            border-radius: 100px;
+            padding: 0 10px;
+        }
+        &-img3 {
+            width: 176px;
+            height: 35.3px;
+            padding: 0 10px;
+        }
+        &-text {
+            width: 527px;
+            height: 72px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    &-div1 {
+        &-text {
+
+        }
+        &--img {
+            width: 134px;
+            height: 134px;
+            padding-top: 0.5px;
+            border-radius: 10px;
+        }
+    }
+}

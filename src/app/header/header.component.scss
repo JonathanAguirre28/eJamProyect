@@ -1,0 +1,37 @@
+.nabvar {
+  width: 1097px;
+  height: 50px;
+  background-color: #252F3D;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__item {
+    display: flex;
+    width: 231px;
+    height: 15px;
+    top: 15px;
+    left: 127px;
+
+    &-links {
+      color: white;
+      text-decoration: none;
+      font-family: Manrope;
+      line-height: 12px;
+      font-size: 10px;
+      width: 257px;
+      height: 22px;
+      top: 15px;
+      left: 468px;
+    }
+
+    &-icono {
+      width: 20.28px;
+      height: 14.1px;
+      top: 4.98px;
+      left: 0.86px;
+      padding: 0 5px;
+
+    }
+  }
+}
