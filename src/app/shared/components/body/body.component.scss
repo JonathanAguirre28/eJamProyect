@@ -1,41 +1,41 @@
-.main{
-    &__div {
+.marks{
+    &__primary {
         display: flex;
         flex-direction:row;
         justify-content:space-around;
         padding: 10px;
-        &-img1 {
+        &-clarifion {
             width: 192px;
             height: 36px;
             padding: 5px;
         }
-        &-img2 {
+        &-mcafee {
             width: 88px;
             height: 32px;
             padding: 0 30px;
         }
-        &-img3 {
+        &-norton {
             width: 82px;
             height: 32px;
         }
     }
-    &__div2 {
+    &__text{
         padding-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &-parrafo1 {
+        &-main {
             font-size: 35px;
             font-weight: 400;
         }
-        &--parrafo2 {
+        &-secondary {
             font-size: 20px;
         }
     }
 }
 
-.main1 {
+.step {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
@@ -48,26 +48,26 @@
          height: 40px; 
          padding: 0 10px;     
         }
-        &-text1 {
+        &-textReview{
             width: 180px;
             height: 14px;
             font-weight: 400;
             line-height: 22px;
 
         }
-        &-text2 {
+        &-textCheckout {
             width: 163px;
             height: 14px;
             font-weight: 400;
             line-height: 22px;
         }
-        &-text3 {
+        &-textSpecial{
             font-weight: 700;
             width: 201px;
             height: 14px;
             line-height: 22px;
         } 
-        &-text4 {
+        &-textConfirmation {
             width: 195px;
             height: 14px;
             font-weight: 400;
@@ -84,7 +84,7 @@
         flex-direction: column;
         align-items: center;
         &-img {
-            width: 575px;
+            width: 500px;
             height: 591;
             padding-top: 40px;
             padding-left: 40px;
@@ -109,11 +109,17 @@
             line-height: 24px;
         }
     }
-    &-div1 {
-        &-text {
-
+    &__div1 {
+        &-center{
+            display: flex;
+            &-text {
+                padding-top: 45px;
+                width: 450px;
+                height: 113px;
+                font-weight: 400;
+            }
         }
-        &--img {
+        &-img {
             width: 134px;
             height: 134px;
             padding-top: 0.5px;
