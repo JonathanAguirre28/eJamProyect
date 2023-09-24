@@ -123,6 +123,11 @@
                 width: 398px;
                 height: 34px;
                 font-size: 16px;
+                &-stock {
+                    width: 398px;
+                    height: 34px;
+                    font-size: 16px;
+                }
             }
                 &-primary {
                     padding-top: 45px;
@@ -134,7 +139,6 @@
                     display: flex;
                     align-items: baseline;
                     &-icon {
-                        width: 10px;
                         height: 10px;
                         padding: 0 5px;
                     }
@@ -161,8 +165,6 @@
                     font-size: 16px;
                     height: 22px;
                     &-img {
-                        width: 22px;
-                        height: 22px;
                         padding: 0 10px;
                     }
                     &-paragraph {
@@ -180,7 +182,12 @@
                     margin-top: 15px;
                     width: 524px;
                     height: 56px;
-                }
+                    &-desktop {
+                        margin-top: 15px;
+                        width: 524px;
+                        height: 56px;
+                    }
+                }           
             }
             &__textRed {
                 display: flex;
@@ -199,18 +206,45 @@
         }
     }
 
+    @media (min-width: 768px ) {
+       .rightColumn {
+        &__desc {
+            &-mobile {
+                display: none;
+            }
+        }
+        &__imgMobile {
+            display: none;
+        }
+       }
+    }
+
     @media (max-width: 768px) {
         .marks {
             &__primary {
+                margin-bottom: 10px;
                 &-clarifion {
                     width: 106.67px;
                     height: 20px;
+                    margin-top: 10px;
                 }
                 &-mcafee {
+                    width: 65px;
+                    height: 18px;
+                }
+                &-norton {
+                    width: 65px;
+                    height: 18px;
                 }
             }
             &__text {
                 text-align: center;
+                &-secondary {
+                    font-size: 16px;
+                }
+                &-main {
+                    font-size: 32px;
+                }
             }
         }
 
@@ -262,35 +296,111 @@
 
         .rightColumn{
            &__text {
-            text-align: center;
+            width: 150px;
+            text-align: inherit;
+            &-img-price {
+                width: 224px;
+            }
+            &-star {
+                width: 68px;
+                height: 12px;
+            }
             &-primary {
                 width: 320px !important;
                 height: 85px !important;
                 padding: 0 !important;
                 margin-top: 40px !important;
             }
+            &-paragraph {
+                display: none;
+            }
+            &-paragraph-stock {
+                font-size: 12px !important;
+                padding-top: 10px;
+            }
+            &-secundary {
+                width: 130px;
+                height: 16px;
+
+            }           
            }
            &__products {
             width: 320px;
             height: 122px;
             &-img {
-                width: 80px;
-                height: 80px;
+                width: 80px !important;
+                height: 80px !important;
+                &-conteiner {
+                    width: 80px;
+                    height: 80px;
+                }
             }
            }
+           &__desc {
+            display: flex !important;
+            align-items: center;
+            &-img {
+                width: 320px !important;
+                height: 51px !important;
+                &-desktop {
+                    display: none;
+                }
+            } 
+            &-mobile {
+                width: 320px !important;
+                height: 64px !important;
+                margin-top: 15px;
+            }
+        } 
+        &__textRed {
+            width: 320px !important;
+            &-img {
+                width: 179px;
+            }
+        }
+        &__icon {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 320px;
+            height: 77px;
+            &-text {
+                text-align: inherit;
+                font-size: 12px;
+            }
+            &-img {
+                width: 48px;
+            }
+        }
+        &__imgMobile {
+            font-size: 12px;
+            text-align: center;
+        }
+        &__Medium {
+            margin-top: 20px;
+            &-text{
+                gap: 5px;
+                &-paragraph {
+                    font-size: 12px;
+                }
+                &-img {
+                    padding: 0 !important;
+                }
+            }
+        }
         }
 
         .section__conteiner {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            padding-right: 20px;
             .leftColumn {
                 display: none;  
                 &__img {
                     &-clarifion {
                         
                     }
-                }              
+                }             
             }
         }
     }

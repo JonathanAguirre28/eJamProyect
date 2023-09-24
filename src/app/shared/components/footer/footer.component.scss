@@ -8,8 +8,8 @@
     &__container {
         display: flex;
         &-img {
-            width: 15px;
-            height: 15px;
+            width: 25px;
+            height: 20px;
             padding: 0 5px;
             padding-top: 4px;
             padding-left: 4.17px;
@@ -25,4 +25,21 @@
         line-height: 24px;
         color: white;
     }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        &__container {
+            &-img {
+                width: 25px;
+                height: 20px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+
 }
